@@ -1,6 +1,7 @@
 I wanna die
 
 Supports: [Solara and Wave]
+https://michael-48.github.io/Iris/api/Iris
 
 Example:
 
