@@ -1,4 +1,5 @@
 I wanna die
+
 Supports: [Solara and Wave]
 
 Example:
