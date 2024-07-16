@@ -3,10 +3,9 @@ I wanna die
 Supports: [Solara and Wave]
 
 Example:
-local Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Main.lua"))().Init()
-
 
 ```
+local Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Main.lua"))().Init()
 Iris:Connect(function()
     local windowSize = Iris.State(Vector2.new(300, 400))
 
