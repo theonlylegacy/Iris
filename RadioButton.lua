@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Parent.Types)
+local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
 
 return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
     --stylua: ignore
