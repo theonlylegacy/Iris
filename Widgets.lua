@@ -1,4 +1,4 @@
-local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
+local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()()
 
 local widgets = {} :: Types.WidgetUtility
 
@@ -514,23 +514,23 @@ return function(Iris: Types.Internal)
 
     Iris._utility = widgets
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Root.lua"))(Iris, widgets)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Window.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Root.lua"))()(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Window.lua"))()(Iris, widgets)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Menu.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Menu.lua"))()(Iris, widgets)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Format.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Format.lua"))()(Iris, widgets)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Text.lua"))(Iris, widgets)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Button.lua"))(Iris, widgets)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Checkbox.lua"))(Iris, widgets)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/RadioButton.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Text.lua"))()(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Button.lua"))()(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Checkbox.lua"))()(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/RadioButton.lua"))()(Iris, widgets)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Tree.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Tree.lua"))()(Iris, widgets)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Input.lua"))(Iris, widgets)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Combo.lua"))(Iris, widgets)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Plot.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Input.lua"))()(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Combo.lua"))()(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Plot.lua"))()(Iris, widgets)
 
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Table.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Table.lua"))()(Iris, widgets)
 end
