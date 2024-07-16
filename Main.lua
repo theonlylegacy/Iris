@@ -9,7 +9,7 @@ local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonly
 ]=]
 local Iris = {} :: Types.Iris
 
-local Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Internal.lua"))(Iris)
+local Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Internal.lua"))()(Iris)
 
 --[=[
     @prop Disabled boolean
@@ -438,7 +438,7 @@ function Iris.ComputedState(firstState: Types.State, onChangeCallback: (firstSta
     end
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Widgets.lua"))(Internal)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/API.lua"))(Iris)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Widgets.lua"))()(Internal)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/API.lua"))()(Iris)
 
 return Iris
