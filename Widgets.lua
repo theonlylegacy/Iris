@@ -31,7 +31,7 @@ return function(Iris: Types.Internal)
     end
 
     function widgets.getMouseLocation(): Vector2
-		local MouseLocation: userdata = widgets.UserInputService:GetMouseLocation()
+	local MouseLocation: userdata = widgets.UserInputService:GetMouseLocation()
         return Vector2.new(MouseLocation.X, MouseLocation.Y) - Vector2.new(widgets.GuiInset.X, widgets.GuiInset.Y)
     end
 
