@@ -1,4 +1,4 @@
-local Types = require(script.Parent.Types)
+local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
 
 return function(Iris: Types.Iris): Types.Internal
     --[=[
