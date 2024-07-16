@@ -5,7 +5,9 @@ Supports: [Solara and Wave]
 Example:
 local Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Main.lua"))().Init()
 
-```Iris:Connect(function()
+
+```
+Iris:Connect(function()
 	local windowSize = Iris.State(Vector2.new(300, 400))
 
 	Iris.Window({"My Second Window"}, {size = windowSize})
@@ -25,4 +27,5 @@ local Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlyl
 			end
 		Iris.End()
 	Iris.End()
-end)```
+end)
+```
