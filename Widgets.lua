@@ -514,23 +514,23 @@ return function(Iris: Types.Internal)
 
     Iris._utility = widgets
 
-    require(script.Root)(Iris, widgets)
-    require(script.Window)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Root.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Window.lua"))(Iris, widgets)
 
-    require(script.Menu)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Menu.lua"))(Iris, widgets)
 
-    require(script.Format)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Format.lua"))(Iris, widgets)
 
-    require(script.Text)(Iris, widgets)
-    require(script.Button)(Iris, widgets)
-    require(script.Checkbox)(Iris, widgets)
-    require(script.RadioButton)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Text.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Button.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Checkbox.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/RadioButton.lua"))(Iris, widgets)
 
-    require(script.Tree)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Tree.lua"))(Iris, widgets)
 
-    require(script.Input)(Iris, widgets)
-    require(script.Combo)(Iris, widgets)
-    require(script.Plot)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Input.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Combo.lua"))(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Plot.lua"))(Iris, widgets)
 
-    require(script.Table)(Iris, widgets)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Table.lua"))(Iris, widgets)
 end
