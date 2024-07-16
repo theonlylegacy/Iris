@@ -31,7 +31,8 @@ return function(Iris: Types.Internal)
     end
 
     function widgets.getMouseLocation(): Vector2
-        return widgets.UserInputService:GetMouseLocation() - widgets.GuiInset
+		local MouseLocation: userdata = widgets.UserInputService:GetMouseLocation()
+        return Vector2.new(MouseLocation.X, MouseLocation.Y) - Vector2.new(widgets.GuiInset.X, widgets.GuiInset.Y)
     end
 
     function widgets.findBestWindowPosForPopup(refPos: Vector2, size: Vector2, outerMin: Vector2, outerMax: Vector2): Vector2
