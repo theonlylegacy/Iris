@@ -1,4 +1,4 @@
-local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
+local Types = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
 
 return function(Iris: Types.Iris)
     -- basic wrapper for nearly every widget, saves space.
