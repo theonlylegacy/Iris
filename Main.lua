@@ -1,5 +1,5 @@
 --!optimize 2
-local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
+local Types = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Types.lua"))()
 
 --[=[
     @class Iris
@@ -9,7 +9,7 @@ local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonly
 ]=]
 local Iris = {} :: Types.Iris
 
-local Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Internal.lua"))()(Iris)
+local Internal: Types.Internal = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Internal.lua"))()(Iris)
 
 --[=[
     @prop Disabled boolean
@@ -267,7 +267,7 @@ end
 
     TemplateConfig provides a table of default styles and configurations which you may apply to your UI.
 ]=]
-Iris.TemplateConfig = loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Config.lua"))()
+Iris.TemplateConfig = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Config.lua"))()
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.colorDark) -- use colorDark and sizeDefault themes by default
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.sizeDefault)
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.utilityDefault)
@@ -438,7 +438,7 @@ function Iris.ComputedState(firstState: Types.State, onChangeCallback: (firstSta
     end
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Widgets.lua"))()(Internal)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/theonlylegacy/Iris/main/API.lua"))()(Iris)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/theonlylegacy/Iris/main/Widgets.lua"))()(Internal)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/theonlylegacy/Iris/main/API.lua"))()(Iris)
 
 return Iris
