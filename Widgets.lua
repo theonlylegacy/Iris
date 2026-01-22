@@ -14,7 +14,7 @@ return function(Iris: Types.Internal)
         RIGHT_POINTING_TRIANGLE = "rbxassetid://105541346271951",
         DOWN_POINTING_TRIANGLE = "rbxassetid://95465797476827",
         MULTIPLICATION_SIGN = "rbxassetid://133890060015237", -- best approximation for a close X which roblox supports, needs to be scaled about 2x
-        BOTTOM_RIGHT_CORNER = "rbxassetid://125737344915000", -- used in window resize icon in bottom right
+        BOTTOM_RIGHT_CORNER = "\u{25E2}", -- used in window resize icon in bottom right
         CHECKMARK = "rbxassetid://109638815494221",
         BORDER = "rbxassetid://133803690460269",
         ALPHA_BACKGROUND_TEXTURE = "rbxassetid://114090016039876", -- used for color4 alpha
